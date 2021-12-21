@@ -20,7 +20,7 @@ function ProductFeed({ products }) {
                 src="/assets/images/mini-banner.jpg" alt="mini-banner" />
 
             <div className='md:col-span-2 '>
-                {products.slice(4, 5).map(({ id, title, price, description, category, image }) => (
+                {products.slice(4, 5).map(({ id, title, price, description, category, image, }) => (
                     <Product
                         key={id}
                         id={id}

@@ -7,7 +7,7 @@ export default function Home({ products }) {
   return (
     <div className="bg-gray-100">
       <Head>
-        <title>Amazon 2.0</title>
+        <title>Amazon</title>
       </Head>
 
       {/* Header */}
@@ -25,6 +25,8 @@ export default function Home({ products }) {
   );
 }
 
+
+//GET >> products for fakeapi store
 
 export async function getServerSideProps(context) {
   const products = await fetch("https://fakestoreapi.com/products")
