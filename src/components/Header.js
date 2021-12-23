@@ -26,7 +26,6 @@ function Header() {
                         className='cursor-pointer'
                     />
                 </div>
-
                 {/* search bar */}
                 <div className='hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer  bg-yellow-400 hover:bg-yellow-500'>
                     <input type="text" className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4" />
@@ -43,7 +42,7 @@ function Header() {
                         <p className="font-extrabold md:text-sm">Accounts & Lists</p>
                     </div>
 
-                    <div className="link">
+                    <div className="link" onClick={() => router.push('/orders')}>
                         <p>Returns</p>
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>

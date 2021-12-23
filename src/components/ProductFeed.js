@@ -1,4 +1,5 @@
 import Product from "./Product"
+import { motion } from "framer-motion"
 
 function ProductFeed({ products }) {
     return (
@@ -22,7 +23,7 @@ function ProductFeed({ products }) {
             <img className="md:col-span-full mx-auto"
                 src="/assets/images/mini-banner.jpg" alt="mini-banner" />
 
-            <div className='md:col-span-2 h-20'>
+            <div className='md:col-span-2 mx-auto'>
                 {products.slice(4, 5).map(({ id, title, price, description, category, image, }) => (
                     <Product
                         key={id}
