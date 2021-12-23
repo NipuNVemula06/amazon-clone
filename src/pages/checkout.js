@@ -10,7 +10,7 @@ import axios from 'axios'
 import { loadStripe } from '@stripe/stripe-js'
 
 
-const publishableKey = `${process.env.stripe_public_key}`;
+const publishableKey = process.env.stripe_public_key;
 
 const stripePromise = loadStripe(publishableKey);
 
