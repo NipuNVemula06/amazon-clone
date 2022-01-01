@@ -4,7 +4,6 @@ import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
-import Fade from "react-reveal/Fade";
 import Link from "next/Link";
 
 const MAX_RATING = 5;
@@ -36,7 +35,7 @@ function Product({ id, title, price, description, category, image }) {
   };
 
   return (
-    <Fade bottom>
+    <>
       <div className="relative flex flex-col m-5 bg-white z-30 p-10 shadow-md hover:shadow-xl">
         <p className="absolute top-2 right-2 text-xs italic text-gray-400">
           {category}
@@ -83,7 +82,7 @@ function Product({ id, title, price, description, category, image }) {
           Add to Cart
         </button>
       </div>
-    </Fade>
+    </>
   );
 }
 
